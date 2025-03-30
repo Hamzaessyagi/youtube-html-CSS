@@ -2,6 +2,7 @@
 body{
     color: black;
     background: #000000;
+    
 }
 .header{
     
@@ -33,13 +34,14 @@ width: 82px;
   HEIGHT: 31px;
   border-radius: 1rem;
   text-align: center;
-  font-size: 17px;
+  font-size: 13px;
   background-color: #272525;
   color: #fffffff2;
   font-style: initial;
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .profile1:hover
 {
@@ -68,7 +70,7 @@ width: 82px;
   background-color: rgb(17, 17, 17);
   color: white;
   text-align: start;
-  margin: 31px 3px;
+  
   border: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -81,13 +83,7 @@ display: flex;
   gap: 10px;
 }
 
-.search {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-}
+
 
 .rech, .vocale {
     display: flex;
@@ -120,8 +116,8 @@ display: flex;
 .compte{
     display: flex;
     gap: 25px;
-    margin-right: 24px;
-    margin-top: 24px;
+    
+    margin-top: 12px;
 }
 
 
@@ -166,13 +162,7 @@ display: flex;
     gap: 5px;
     flex-direction: column;
 }
-.titre:hover{
-    
-    transform: scale(1.05); /* Agrandissement léger */
-     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    
-}
+
 .profiletittre{
     display: flex;
     gap: 10px;
@@ -183,14 +173,7 @@ display: flex;
     gap: 5px;
     flex-direction: column;
 }
-.part1{
-    display: flex;
-    gap: 10px;
-    justify-content: end;
-   
-    
-    margin: 31px 3px 0px 446px;
-}
+
 .img{
     width: 350px;
     height: 230px;
@@ -216,6 +199,7 @@ display: flex;
     display: flex;
     padding-left: 14px;
     margin: 29px;
+    
 }
 
 
@@ -229,7 +213,7 @@ display: flex;
   cursor: pointer;
   color: #ffffffc7;
   transition: .5s;
-  
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .chips-wrapper .chip:hover 
@@ -273,7 +257,7 @@ display: flex;
 
 .sidebar {
     padding-top: 10px;
-    width: 240px;
+    width: 200px;
     background-color: #000000;
     overflow-y: scroll;
     color: #fff;
@@ -302,15 +286,48 @@ display: flex;
 
 @media (max-width:1200px) {
     .sidebar {
-        width: 70px;
+        width: 60px;
         overflow-x: hidden;
     }
     .content {
-        width: calc(100vw - 70px);
+        width: calc(100vh - 70px);
     }
     .more {
         display: none;
     }
 }
 
+.videos{
 
+ display: flex;
+  grid-gap: 18px;
+  padding: 20px 25px;
+  height: calc(100vh - 250px);
+  overflow-x:scroll;
+}
+
+.videos{
+    justify-content: end;
+    
+}
+.rechh .mic {
+    background: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+.rech:hover, .vocale:hover {
+    background: #6c6a6a8b;
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mic{
+    border: none;
+  background: black;
+  color: white;
+  font-size: 1rem;
+    
+}
